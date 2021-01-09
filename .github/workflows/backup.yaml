@@ -1,8 +1,9 @@
 name: Backup Firestore2
 
 on:
-  schedule:
-    - cron: "0 0 * * *"
+  push:
+    branches:
+      - master
 
 env:
   PROJECT_ID: un-colab-chat
